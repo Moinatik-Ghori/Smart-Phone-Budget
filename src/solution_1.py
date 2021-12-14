@@ -21,7 +21,7 @@ def findMaxBudget(n, arr):
     maxBudgte = arr[0] * n
 
     # Comparing maxBuddget with other elements, if found maxBudget will be udpated.
-    for i in range(1,n):
+    for i in range(n):
         if maxBudgte < (arr[i] * (n-i)):
             maxBudgte = arr[i] * (n-i)
 
