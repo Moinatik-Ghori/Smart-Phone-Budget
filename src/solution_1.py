@@ -28,8 +28,13 @@ def findMaxBudget(n, arr):
     return  maxBudgte
 
 if __name__ == "__main__":
-    noOfCustomer = 4
-    budgte = [30, 20, 53, 14]
+    noOfCustomer = int(input("Enter number of Customers : "))
+
+    budgte = []
+    for i in range(noOfCustomer):
+        budgteAmount  = int(input())
+        budgte.append(budgteAmount)
+
 
     # Calling the function with no of customer and budget array
     maxBudgte = findMaxBudget(noOfCustomer , budgte)
